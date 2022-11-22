@@ -17,7 +17,7 @@ body{
     margin: auto;
 }
 img{
-    border-radius: 40px ;
+    border-radius: 100px  30px 50px ;
     padding-top: 20px;
 }
 h4{
@@ -26,8 +26,24 @@ h4{
     color: #fff;
 }
 .h3{
-    color: #555;
+    color: black;
+    margin-top: 15px;
 }
 .mb-3{
     color: #ddd;
+}
+p{
+    font-size: 35px;
+    color: #fff;
+}
+.price{
+    margin-left: 120px;
+}
+.im:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 5px 60px 7px rgb(225, 208, 208) ;
+    transition: .3s;
+}
+.bg-image:hover{
+    box-shadow: 5px 5px 20px 7px gray ;
 }

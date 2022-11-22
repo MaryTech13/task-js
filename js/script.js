@@ -8,14 +8,19 @@ allProducts.forEach(function(item){
     item.onclick = function(){
         totalPrice += parseInt(item.getAttribute("price"))
         content.style.color = "white";
-        content.innerHTML += item.textContent + " &hearts; ";
+        content.innerHTML += " &hearts;" + item.textContent + " &hearts; ";
         Show.style.color = "white"
+        Show.style.fontSize = "35px"
 
         if (content.innerHTML != "" ){
             btn.style.display = "block";
+            Show.style.backgroundColor = "transparent"
+            Show.style.borderRadius = "20px"
+            Show.style.margin ="25px auto"
         }
     }
 })
 btn.onclick = function(){
-    Show.innerHTML = totalPrice
+    Show.innerHTML = totalPrice + "$";
+    Show.style.display = "block"
 }
